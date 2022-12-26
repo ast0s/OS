@@ -57,10 +57,13 @@ void executeFork(char* processTree, size_t treeSize)
     }
 }
 
-int main(int argc, char* argv[]) {
+int main(int argc, char* argv[]) 
+{
     char* processTree = argv[1];
     size_t treeSize = strlen(processTree);
     executeFork(processTree, treeSize);
+
     sleep(40);
+
     return 0;
 }
